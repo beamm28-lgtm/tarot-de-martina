@@ -138,5 +138,136 @@ footer p{max-width:800px;margin:12px auto}
   <p><a href="https://wa.me/34652356577" target="_blank" rel="noopener">Contactar por WhatsApp</a></p>
   <p class="small">El tarot es una herramienta de reflexión personal y entretenimiento; no sustituye el asesoramiento profesional.</p>
 </footer>
-</body>
+ 
+<style>
+.rituales-martina {
+  background: linear-gradient(#e8f4ff,#fffaf0);
+  padding: 35px 15px;
+  color: #174a80;
+  font-family: Georgia,serif;
+}
+.rituales-martina h2 {
+  text-align:center;
+  color:#174a80;
+}
+.tarjetas-martina {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:18px;
+  max-width:1000px;
+  margin:25px auto;
+}
+.tarjeta-martina {
+  background:#fff;
+  border:1px solid #c99537;
+  border-radius:16px;
+  padding:14px;
+  text-align:center;
+  box-shadow:0 5px 18px #174a8018;
+}
+.tarjeta-martina img {
+  width:100%;
+  height:190px;
+  object-fit:cover;
+  border-radius:12px;
+}
+.tarjeta-martina h3 {color:#a87927;}
+.tarjeta-martina a,.boton-martina {
+  display:inline-block;
+  background:linear-gradient(#ffe6a6,#e4b958);
+  color:#173c64;
+  border:1px solid #c99537;
+  border-radius:25px;
+  padding:10px 16px;
+  text-decoration:none;
+  font-weight:bold;
+}
+.calendario-martina {
+  max-width:600px;
+  margin:25px auto;
+  padding:22px;
+  border:1px solid #c99537;
+  border-radius:16px;
+  background:#fff;
+}
+.calendario-martina label {
+  display:block;
+  margin-top:14px;
+}
+.calendario-martina input,
+.calendario-martina select,
+.calendario-martina textarea {
+  width:100%;
+  padding:12px;
+  margin-top:5px;
+  border:1px solid #b7cfe5;
+  border-radius:8px;
+  font-size:16px;
+}
+</style>
+
+<section class="rituales-martina" id="rituales">
+  <h2>✧ Rituales especiales ✧</h2>
+  <p style="text-align:center">
+    Un espacio de calma, intención y conexión espiritual.
+  </p>
+
+  <div class="tarjetas-martina">
+    <article class="tarjeta-martina">
+      <img src="https://images.unsplash.com/photo-1518199266791-5375a83190b7?auto=format&fit=crop&w=700&q=80" alt="Ritual del amor con flores suaves">
+      <h3>♡ Ritual de Amor</h3>
+      <p>Un momento para reflexionar sobre el amor propio, los sentimientos y tus deseos.</p>
+      <a href="https://wa.me/34652356577?text=Hola%20Beatriz%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ritual%20de%20Amor">Consultar ritual</a>
+    </article>
+
+    <article class="tarjeta-martina">
+      <img src="https://images.unsplash.com/photo-1518531933037-91b2f5f229cc?auto=format&fit=crop&w=700&q=80" alt="Naturaleza tranquila para un ritual de limpieza">
+      <h3>✧ Ritual de Limpieza</h3>
+      <p>Un espacio simbólico para soltar preocupaciones y renovar tus intenciones.</p>
+      <a href="https://wa.me/34652356577?text=Hola%20Beatriz%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ritual%20de%20Limpieza">Consultar ritual</a>
+    </article>
+
+    <article class="tarjeta-martina">
+      <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=700&q=80" alt="Paisaje sereno para un ritual de renovación">
+      <h3>☾ Ritual para Alejar</h3>
+      <p>Una práctica simbólica para marcar límites y centrarte en tu tranquilidad.</p>
+      <a href="https://wa.me/34652356577?text=Hola%20Beatriz%2C%20quiero%20informaci%C3%B3n%20sobre%20el%20Ritual%20para%20Alejar">Consultar ritual</a>
+    </article>
+  </div>
+
+  <h2>☼ La carta del Mundo ☼</h2>
+  <div class="tarjeta-martina" style="max-width:350px;margin:20px auto">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/RWS_Tarot_21_World.jpg" alt="Carta del Mundo del tarot Rider-Waite">
+    <h3>El Mundo</h3>
+    <p>Simboliza culminación, integración y el comienzo de nuevas etapas.</p>
+  </div>
+</section>
+
+<section class="rituales-martina" id="calendario">
+  <h2>✧ Calendario de reservas ✧</h2>
+  <p style="text-align:center">Elige el día y la hora que prefieras. Te confirmaré personalmente la disponibilidad.</p>
+
+  <form class="calendario-martina" onsubmit="event.preventDefault();const f=this;const m='Hola Beatriz, quiero consultar una reserva para Tarot de Martina.%0AFecha: '+encodeURIComponent(f.fecha.value)+'%0AHora: '+encodeURIComponent(f.hora.value)+'%0ADuración: '+encodeURIComponent(f.duracion.value)+'%0AMensaje: '+encodeURIComponent(f.mensaje.value);window.open('https://wa.me/34652356577?text='+m,'_blank');">
+    <label>Fecha deseada
+      <input type="date" name="fecha" required>
+    </label>
+    <label>Hora preferida
+      <input type="time" name="hora" required>
+    </label>
+    <label>Duración de la consulta
+      <select name="duracion">
+        <option>15 minutos — 14 €</option>
+        <option>30 minutos — 25 €</option>
+        <option>1 hora — 40 €</option>
+      </select>
+    </label>
+    <label>Mensaje (opcional)
+      <textarea name="mensaje" rows="3" placeholder="Escribe aquí tu consulta"></textarea>
+    </label>
+    <p style="text-align:center">
+      <button class="boton-martina" type="submit">☾ Solicitar cita por WhatsApp</button>
+    </p>
+  </form>
+</section>
+ </body>
 </html>
