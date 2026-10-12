@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Horóscopos Gratis | Tarot de Martina</title>
+<meta name="description" content="Descubre tu horóscopo diario gratis. Amor, trabajo y dinero para los doce signos del zodiaco en Tarot de Martina.">
+<style>
+*{box-sizing:border-box}
+body{
+ margin:0;
+ font-family:Arial,sans-serif;
+ background:linear-gradient(180deg,#eaf6ff,#f8f3ff);
+ color:#304567;
+ font-size:18px;
+ line-height:1.7
+}
+header{
+ text-align:center;
+ padding:32px 16px;
+ background:linear-gradient(135deg,#b9ddf8,#ded4ff);
+}
+h1{font-size:clamp(30px,7vw,44px);margin:0 0 8px}
+header p{font-size:19px;margin:0}
+main{max-width:950px;margin:auto;padding:20px 14px}
+.volver{
+ display:inline-block;
+ background:#fff;
+ color:#315b91;
+ padding:12px 18px;
+ border-radius:25px;
+ text-decoration:none;
+ font-weight:bold;
+ margin-bottom:20px;
+ border:1px solid #c8def6
+}
+.intro{text-align:center;margin:10px 0 28px}
+.fecha{
+ color:#566b92;
+ font-weight:bold;
+ text-align:center;
+ margin:15px
+}
+.grid{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));
+ gap:17px
+}
+.card{
+ background:rgba(255,255,255,.94);
+ border:1px solid #d7e5fa;
+ border-radius:18px;
+ padding:20px;
+ box-shadow:0 4px 14px #9db7d51c
+}
+.card h2{
+ color:#496eaa;
+ font-size:25px;
+ margin:0 0 8px
+}
+.simbolo{font-size:32px}
+.card p{margin:8px 0}
+.card strong{color:#705c9d}
+footer{text-align:center;padding:28px 15px;color:#52678b}
+</style>
+</head>
+<body>
+<header>
+<h1>✧ Horóscopos de Martina ✧</h1>
+<p>Tu guía diaria entre las estrellas</p>
+<p>🌙 Amor · ✨ Trabajo · 💫 Dinero</p>
+</header>
+
+<main>
+<a class="volver" href="index.html">← Volver a Tarot de Martina</a>
+
+<div class="intro">
+<h2>Tu horóscopo diario gratis</h2>
+<p>Descubre los mensajes de los astros para tu signo zodiacal.</p>
+</div>
+
+<p class="fecha" id="fecha"></p>
+<div class="grid" id="horoscopos"></div>
+</main>
+
+<footer>
+<p>Tarot de Martina © 2026</p>
+<p>Lecturas orientativas para entretenimiento y reflexión personal.</p>
+</footer>
+
+<script>
+const signos = [
+["♈","Aries"],["♉","Tauro"],["♊","Géminis"],
+["♋","Cáncer"],["♌","Leo"],["♍","Virgo"],
+["♎","Libra"],["♏","Escorpio"],["♐","Sagitario"],
+["♑","Capricornio"],["♒","Acuario"],["♓","Piscis"]
+];
+
+const amor = [
+"El diálogo y la sinceridad pueden acercarte a esa persona especial.",
+"Es un buen momento para cuidar de ti y escuchar a tu corazón.",
+"Un pequeño gesto de cariño puede marcar la diferencia.",
+"Deja espacio para nuevas ilusiones y disfruta del presente.",
+"Expresa lo que sientes con calma y evita sacar conclusiones precipitadas.",
+"Dedica tiempo a las personas que te aportan tranquilidad."
+];
+
+const trabajo = [
+"Organizar tus prioridades te ayudará a avanzar con más confianza.",
+"Una idea que tenías pendiente merece que le dediques atención.",
+"Ten paciencia: los pequeños pasos también cuentan.",
+"Confía en tus capacidades y revisa los detalles antes de decidir.",
+"Una conversación puede ayudarte a ver una situación de otra manera.",
+"Busca el equilibrio entre tus obligaciones y tu descanso."
+];
+
+const dinero = [
+"Revisa tus gastos y piensa bien antes de hacer compras impulsivas.",
+"Planificar con tiempo puede darte más tranquilidad económica.",
+"Prioriza lo necesario y reserva un momento para revisar tus cuentas.",
+"La prudencia será tu mejor aliada al tomar decisiones económicas.",
+"Antes de gastar, compara opciones y valora lo que realmente necesitas.",
+"Un pequeño objetivo de ahorro puede ayudarte a organizarte mejor."
+];
+
+const ahora = new Date();
+const inicio = new Date(ahora.getFullYear(),0,0);
+const dia = Math.floor((ahora-inicio)/86400000);
+
+document.getElementById("fecha").textContent =
+"Predicciones del " + ahora.toLocaleDateString("es-ES", {
+day:"numeric",month:"long",year:"numeric"
+});
+
+document.getElementById("horoscopos").innerHTML =
+signos.map((s,i)=>{
+const a=(dia+i)%amor.length;
+const t=(dia+i*2)%trabajo.length;
+const d=(dia+i*3)%dinero.length;
+return `
+<article class="card">
+<h2><span class="simbolo">${s[0]}</span> ${s[1]}</h2>
+<p><strong>❤️ Amor:</strong> ${amor[a]}</p>
+<p><strong>💼 Trabajo:</strong> ${trabajo[t]}</p>
+<p><strong>💰 Dinero:</strong> ${dinero[d]}</p>
+</article>`;
+}).join("");
+</script>
+</body>
+</html>
