@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Características y Compatibilidad de los Signos Zodiacales | Tarot de Martina</title>
+<meta name="description" content="Descubre las características de los doce signos zodiacales: personalidad, fortalezas, retos, amor y compatibilidad entre signos en Tarot de Martina.">
+<meta name="theme-color" content="#8fc5ec">
+<style>
+*{box-sizing:border-box}
+:root{--azul:#315d91;--azulclaro:#eaf6ff;--lavanda:#f5f0ff;--dorado:#c69b4d;--texto:#304567}
+body{margin:0;font-family:Georgia,'Times New Roman',serif;background:linear-gradient(180deg,#eaf6ff,#f8f3ff 55%,#fffdf8);color:var(--texto);font-size:18px;line-height:1.7}
+header{text-align:center;padding:30px 15px;background:linear-gradient(135deg,#83c2e9,#c4dafa);border-bottom:3px solid var(--dorado)}
+h1{font-size:clamp(29px,6.5vw,45px);line-height:1.2;margin:0 0 8px;color:#173f70}
+header p{font-size:19px;margin:5px 0}
+main{max-width:1120px;margin:auto;padding:20px 14px 36px}
+a{color:#315d91}
+.volver{display:inline-block;background:#fff;color:var(--azul);padding:11px 17px;border-radius:25px;text-decoration:none;font-weight:bold;margin-bottom:18px;border:1px solid #c8def6}
+.intro{text-align:center;margin:8px auto 24px;max-width:850px}
+.intro h2{font-size:clamp(25px,5vw,34px);color:#315d91;margin:0 0 7px}
+.selector{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:18px 0 24px}
+.selector button{font:inherit;font-size:16px;border:1px solid #c8def6;border-radius:24px;background:#fff;color:#315d91;padding:9px 14px;cursor:pointer}
+.selector button:hover,.selector button:focus{background:#315d91;color:white}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:17px}
+.card{background:#ffffffed;border:1px solid #d7e5fa;border-top:4px solid #9ac8ed;border-radius:17px;padding:20px;box-shadow:0 5px 18px #9db7d51c;scroll-margin-top:15px}
+.card h2{font-size:26px;line-height:1.3;color:#496eaa;margin:0 0 2px}
+.rango{font-size:15px;color:#697c9d;margin:0 0 12px}
+.card p{margin:9px 0}
+.card strong{color:#705c9d}
+.tag{display:inline-block;background:#f0f7ff;border:1px solid #d7e5fa;border-radius:20px;padding:3px 10px;font-size:15px;margin:2px 3px 6px 0}
+.compat{background:#f3f0ff;border-radius:11px;padding:12px 14px;margin-top:13px}
+.compat p{margin:5px 0}
+.note{font-size:15px;color:#5c6f8c;text-align:center;margin:25px auto 0;max-width:850px}
+footer{text-align:center;padding:25px 15px;color:#52678b;background:#edf6ff;border-top:1px solid #d5e5f7}
+@media(max-width:560px){body{font-size:17px}header{padding:24px 12px}main{padding:16px 10px 28px}.card{padding:16px}.card h2{font-size:24px}.grid{gap:12px}.selector button{font-size:15px;padding:8px 11px}}
+</style>
+</head>
+<body>
+<header>
+<h1>✧ Los Signos del Zodiaco ✧</h1>
+<p>Personalidad, fortalezas, amor y compatibilidad</p>
+<p>🌙 Descubre qué hace especial a cada signo</p>
+</header>
+<main>
+<a class="volver" href="index.html">← Volver a Tarot de Martina</a>
+<section class="intro">
+<h2>Características y compatibilidad zodiacal</h2>
+<p>Conoce los rasgos tradicionalmente asociados a cada signo, sus puntos fuertes, sus desafíos y las afinidades que suelen atribuirse a sus relaciones. Busca tu signo para leer su descripción.</p>
+</section>
+<nav class="selector" id="selector" aria-label="Elegir signo"></nav>
+<section class="grid" id="signos"></section>
+<p class="note">La astrología es una tradición simbólica y una herramienta de entretenimiento y reflexión personal. La compatibilidad real depende de la comunicación, el respeto, los valores y las decisiones de cada persona; ningún signo determina por sí solo una relación.</p>
+</main>
+<footer>
+<p><strong>Tarot de Martina © 2026</strong></p>
+<p>Contenido orientativo para el entretenimiento y la reflexión personal.</p>
+</footer>
+<script>
+const signos=[
+{simbolo:"♈",nombre:"Aries",fechas:"21 de marzo – 19 de abril",elemento:"Fuego",modalidad:"Cardinal",rasgos:"Valiente, directa, enérgica y entusiasta",fortalezas:"Iniciativa, sinceridad, valentía y capacidad para empezar de nuevo.",retos:"La impaciencia o actuar antes de valorar todas las opciones. La pausa puede ser una gran aliada.",amor:"Suele valorar la pasión, la espontaneidad y la comunicación clara. Necesita sentir que la relación mantiene viva la ilusión sin perder la independencia.",afinidad:"Leo y Sagitario suelen asociarse con su energía y entusiasmo. Géminis y Acuario pueden aportar conversación y novedad.",reto:"Con Cáncer o Capricornio puede necesitar más paciencia para comprender diferentes ritmos y maneras de expresar las emociones."},
+{simbolo:"♉",nombre:"Tauro",fechas:"20 de abril – 20 de mayo",elemento:"Tierra",modalidad:"Fijo",rasgos:"Leal, paciente, práctica y afectuosa",fortalezas:"Constancia, fiabilidad, sentido práctico y aprecio por la estabilidad.",retos:"La resistencia a los cambios o aferrarse demasiado a una idea. Escuchar otras perspectivas puede abrir nuevas puertas.",amor:"Suele buscar confianza, cariño demostrado con hechos y una relación que crezca a su ritmo. La seguridad emocional es importante.",afinidad:"Virgo y Capricornio comparten su enfoque práctico. Cáncer y Piscis pueden aportar ternura y sensibilidad.",reto:"Con Leo o Acuario pueden surgir diferencias sobre rutinas, cambios o necesidad de independencia; el diálogo ayuda a equilibrarlas."},
+{simbolo:"♊",nombre:"Géminis",fechas:"21 de mayo – 20 de junio",elemento:"Aire",modalidad:"Mutable",rasgos:"Curiosa, comunicativa, ingeniosa y adaptable",fortalezas:"Facilidad para conversar, aprender, conectar ideas y adaptarse a situaciones nuevas.",retos:"La dispersión o cambiar de interés con rapidez. Terminar lo empezado puede darle una satisfacción especial.",amor:"Suele disfrutar de la complicidad mental, el humor y las conversaciones interesantes. Necesita espacio para expresarse y compartir novedades.",afinidad:"Libra y Acuario suelen compartir su curiosidad intelectual. Aries y Leo pueden sumar entusiasmo y espontaneidad.",reto:"Con Virgo o Piscis puede haber distintas formas de procesar ideas y emociones; conviene aclarar lo que cada uno necesita."},
+{simbolo:"♋",nombre:"Cáncer",fechas:"21 de junio – 22 de julio",elemento:"Agua",modalidad:"Cardinal",rasgos:"Protectora, intuitiva, sensible y familiar",fortalezas:"Empatía, lealtad, imaginación y capacidad para cuidar los vínculos importantes.",retos:"Tomarse algunas situaciones demasiado a pecho o guardarse lo que siente. Expresar sus necesidades con claridad puede aliviar tensiones.",amor:"Suele valorar la cercanía, la confianza y los gestos de cuidado. Necesita sentirse escuchada y poder mostrarse vulnerable sin miedo.",afinidad:"Escorpio y Piscis se asocian con una sensibilidad emocional parecida. Tauro y Virgo pueden aportar estabilidad y constancia.",reto:"Con Aries o Libra puede necesitar negociar distintas maneras de afrontar los conflictos y demostrar afecto."},
+{simbolo:"♌",nombre:"Leo",fechas:"23 de julio – 22 de agosto",elemento:"Fuego",modalidad:"Fijo",rasgos:"Generosa, creativa, expresiva y segura",fortalezas:"Calidez, creatividad, lealtad y capacidad para animar a quienes la rodean.",retos:"Necesitar reconocimiento constante o interpretar una crítica como rechazo. Escuchar con apertura fortalece sus relaciones.",amor:"Suele expresar el cariño con generosidad y disfrutar de la admiración mutua. Necesita afecto sincero y una relación donde ambas personas brillen.",afinidad:"Aries y Sagitario comparten su entusiasmo. Géminis y Libra pueden aportar sociabilidad, humor y conversación.",reto:"Con Tauro o Escorpio puede haber voluntades fuertes; respetar los tiempos y evitar competir ayuda a entenderse."},
+{simbolo:"♍",nombre:"Virgo",fechas:"23 de agosto – 22 de septiembre",elemento:"Tierra",modalidad:"Mutable",rasgos:"Observadora, organizada, servicial y analítica",fortalezas:"Atención al detalle, sentido práctico, responsabilidad y deseo de mejorar las cosas.",retos:"El perfeccionismo o la autocrítica excesiva. Aceptar que no todo tiene que ser perfecto aporta tranquilidad.",amor:"Suele demostrar cariño mediante la atención, la ayuda y los pequeños detalles. La confianza se construye con coherencia y comunicación.",afinidad:"Tauro y Capricornio suelen coincidir en su sentido práctico. Cáncer y Escorpio pueden aportar profundidad y dedicación.",reto:"Con Géminis o Sagitario puede necesitar acordar cómo combinar planificación y espontaneidad."},
+{simbolo:"♎",nombre:"Libra",fechas:"23 de septiembre – 22 de octubre",elemento:"Aire",modalidad:"Cardinal",rasgos:"Diplomática, sociable, cooperativa y estética",fortalezas:"Capacidad de diálogo, sentido de la justicia, tacto y habilidad para buscar acuerdos.",retos:"Dudar demasiado o intentar complacer a todo el mundo. Reconocer sus propias preferencias también es importante.",amor:"Suele valorar la reciprocidad, los detalles románticos y la conversación respetuosa. Busca construir una relación equilibrada sin perder su voz.",afinidad:"Géminis y Acuario suelen conectar con su sociabilidad. Leo y Sagitario pueden sumar alegría y dinamismo.",reto:"Con Cáncer o Capricornio pueden diferir las prioridades o la forma de resolver desacuerdos; la escucha mutua puede acercarlos."},
+{simbolo:"♏",nombre:"Escorpio",fechas:"23 de octubre – 21 de noviembre",elemento:"Agua",modalidad:"Fijo",rasgos:"Intensa, observadora, reservada y perseverante",fortalezas:"Determinación, profundidad, lealtad y capacidad para afrontar cambios difíciles.",retos:"La desconfianza o querer controlar aquello que le genera inseguridad. Hablar abiertamente puede crear más confianza.",amor:"Suele buscar sinceridad, profundidad y compromiso. Necesita sentir que puede confiar y que sus límites y emociones son respetados.",afinidad:"Cáncer y Piscis suelen asociarse con comprensión emocional. Virgo y Capricornio pueden ofrecer estabilidad y compromiso.",reto:"Con Leo o Acuario pueden surgir diferencias sobre el control, la independencia o la expresión emocional; acordar límites es esencial."},
+{simbolo:"♐",nombre:"Sagitario",fechas:"22 de noviembre – 21 de diciembre",elemento:"Fuego",modalidad:"Mutable",rasgos:"Optimista, aventurera, sincera y amante de aprender",fortalezas:"Entusiasmo, curiosidad, generosidad y capacidad para ver nuevas posibilidades.",retos:"La impaciencia o hablar con demasiada franqueza. La sinceridad puede ir acompañada de sensibilidad.",amor:"Suele valorar la libertad, el humor y compartir experiencias nuevas. Una relación sólida para este signo deja espacio para crecer juntos e individualmente.",afinidad:"Aries y Leo suelen compartir su energía. Libra y Acuario pueden aportar ideas, conversación y apertura.",reto:"Con Virgo o Piscis puede necesitar aclarar expectativas sobre planes, compromiso y sensibilidad emocional."},
+{simbolo:"♑",nombre:"Capricornio",fechas:"22 de diciembre – 19 de enero",elemento:"Tierra",modalidad:"Cardinal",rasgos:"Responsable, perseverante, prudente y ambiciosa",fortalezas:"Disciplina, paciencia, fiabilidad y habilidad para trabajar hacia objetivos a largo plazo.",retos:"Exigirse demasiado o mostrar poco lo que siente. Permitir momentos de descanso y afecto también es una fortaleza.",amor:"Suele demostrar compromiso con hechos y valorar la lealtad. Necesita una relación fiable donde pueda bajar la guardia con confianza.",afinidad:"Tauro y Virgo comparten su practicidad. Escorpio y Piscis pueden aportar intensidad emocional y sensibilidad.",reto:"Con Aries o Libra puede haber diferencias en el ritmo de las decisiones y las prioridades; negociar responsabilidades ayuda."},
+{simbolo:"♒",nombre:"Acuario",fechas:"20 de enero – 18 de febrero",elemento:"Aire",modalidad:"Fijo",rasgos:"Independiente, original, idealista y humanitaria",fortalezas:"Creatividad, pensamiento independiente, curiosidad y capacidad para imaginar nuevas soluciones.",retos:"Parecer distante cuando necesita espacio o defender una idea sin escuchar otras. Explicar lo que siente puede acercarla a los demás.",amor:"Suele valorar la amistad dentro de la pareja, la libertad y una conexión basada en intereses compartidos. Necesita independencia y respeto mutuo.",afinidad:"Géminis y Libra suelen compartir su interés por las ideas. Aries y Sagitario pueden sumar aventura y dinamismo.",reto:"Con Tauro o Escorpio pueden surgir diferencias sobre estabilidad, cambios o intensidad; hablar de límites y necesidades ayuda."},
+{simbolo:"♓",nombre:"Piscis",fechas:"19 de febrero – 20 de marzo",elemento:"Agua",modalidad:"Mutable",rasgos:"Imaginativa, compasiva, sensible y soñadora",fortalezas:"Empatía, creatividad, intuición y facilidad para conectar con los sentimientos de otras personas.",retos:"Idealizar demasiado o asumir problemas ajenos como propios. Poner límites amables también es una forma de cariño.",amor:"Suele valorar la ternura, la conexión emocional y los gestos sinceros. Le ayuda una relación donde pueda expresarse sin sentirse juzgada.",afinidad:"Cáncer y Escorpio suelen asociarse con profundidad emocional. Tauro y Capricornio pueden aportar seguridad y estabilidad.",reto:"Con Géminis o Sagitario puede ser útil aclarar cómo se comunican las emociones y cuánto espacio necesita cada persona."}
+];
+const selector=document.getElementById("selector");
+const contenedor=document.getElementById("signos");
+selector.innerHTML=signos.map((s,i)=>'<button type="button" data-target="signo-'+i+'">'+s.simbolo+' '+s.nombre+'</button>').join("");
+contenedor.innerHTML=signos.map((s,i)=>'<article class="card" id="signo-'+i+'"><h2>'+s.simbolo+' '+s.nombre+'</h2><p class="rango">'+s.fechas+'</p><span class="tag">Elemento: '+s.elemento+'</span><span class="tag">Modalidad: '+s.modalidad+'</span><p><strong>✨ Personalidad:</strong> '+s.rasgos+'.</p><p><strong>💎 Fortalezas:</strong> '+s.fortalezas+'</p><p><strong>🌱 Aspectos a cuidar:</strong> '+s.retos+'</p><p><strong>❤️ En el amor:</strong> '+s.amor+'</p><div class="compat"><p><strong>💞 Afinidades habituales:</strong> '+s.afinidad+'</p><p><strong>🌙 Posibles retos de compatibilidad:</strong> '+s.reto+'</p></div></article>').join("");
+selector.addEventListener("click",function(e){const btn=e.target.closest("button[data-target]");if(!btn)return;const target=document.getElementById(btn.dataset.target);if(target)target.scrollIntoView({behavior:"smooth",block:"start"});});
+</script>
+</body>
+</html>
