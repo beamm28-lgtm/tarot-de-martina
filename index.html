@@ -55,18 +55,26 @@ a{color:inherit}header{background:#073b70;color:#fff;padding:12px clamp(16px,3vw
 }
 
 
-/* Más azul cielo, manteniendo los detalles dorados */
-:root{--blue:#d7f0ff;--cream:#f4fbff}
-body{background:linear-gradient(180deg,#c9eaff 0%,#e6f6ff 38%,#f5fbff 68%,#d3edff 100%)}
-header{background:linear-gradient(110deg,#073b70,#07518b)}
-.hero{background:radial-gradient(circle at center,#f8fdff 0%,#d7efff 58%,#9fd4f4 100%)}
-.panel,.card{background:linear-gradient(145deg,#fafdff,#d9f0ff)}
-.free-consultation{background:linear-gradient(135deg,#eef9ff,#cdeaff)}
-.trust{background:#e7f6ff}
-.notice{background:#eaf7ff;border-color:#9bcce8}
+/* Paleta luminosa: azul cielo, turquesa y blanco, con detalles dorados */
+:root{--navy:#168fc1;--blue:#dff5ff;--gold:#c9a24f;--ink:#174b63;--cream:#ffffff;--line:#d9bd78}
+body{background:linear-gradient(180deg,#d9f3ff 0%,#f7fdff 42%,#ffffff 68%,#dff7f6 100%);color:var(--ink)}
+header{background:linear-gradient(110deg,#55c8e9,#35bdb9);color:#fff;border-bottom:3px solid var(--gold)}
+.brand{color:#fff}
+nav a{color:#fff}
+nav a:hover{color:#fff7d9}
+.hero{background:radial-gradient(circle at center,#ffffff 0%,#dff5ff 58%,#a9e4f4 100%);border-bottom:3px solid var(--gold)}
+.hero h1{color:#168fc1}
+.section h2,.script,.price,.free-consultation h2{color:#168fc1}
+.panel,.card{background:linear-gradient(145deg,#ffffff,#e5f8ff);border-color:#d9bd78}
+.free-consultation{background:linear-gradient(135deg,#f4fcff,#d5f4f4);border-color:#d9bd78}
+.trust{background:#e9fbff}
+.notice{background:#effbff;border-color:#a8dce9}
+.btn{background:linear-gradient(#fff0c7,#d9b65e);color:#174b63;border-color:#c9a24f}
+.footer{background:linear-gradient(110deg,#45bddb,#2db7b1);border-top:4px solid var(--gold)}
+.footer strong,.footer a{color:#fff8d9}
 @media(max-width:560px){
-  body{background:linear-gradient(180deg,#d2edff 0%,#f3faff 52%,#d7efff 100%)}
-  .hero{background:radial-gradient(circle,#f8fdff 0%,#d8f0ff 65%,#a8dcf8 100%)}
+  body{background:linear-gradient(180deg,#def5ff 0%,#f8fdff 52%,#e0f8f6 100%)}
+  .hero{background:radial-gradient(circle,#ffffff 0%,#e0f6ff 65%,#b8eaf5 100%)}
 }
 
 </style></head><body>
